@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import clorisimg from '../img/cloris.svg';
+import clorisimg from '../img/cloris.png';
 import '../App.css';
 
 class Cloris extends Component {
@@ -27,14 +27,24 @@ class Cloris extends Component {
     render() {
         return (
             <div className="container">
-                <div className="nav-left" onClick={this.pressLeft}>⥽</div>
+                <div className="nav-left" onClick={this.pressLeft}>
+					<img  className="arrow" src={require('../img/left.png')} />
+				</div>
+
                 <div className="inner">
-                    <div><center><img className="size-cloris" src={clorisimg}/></center>
-                    <h1>Cloris Qian</h1>
-                    Cloris is an amazing robot who has been given the ability to think for herself!  She loves to design and create, and help her alien friend Adrien loot he universe.
-                </div>
+				<div className="columnLeft">
+					<h1 className="hello">HELLO! I AM</h1>
+					<img className="size-cloris" src={clorisimg}/>
+                    </div>
+			
+				 <div className="columnRight">
+					<h1 className="name">Cloris Qian</h1>
+					<p className="intro">Cloris is an amazing robot who has been given the ability to think for herself! She loves living in Mars, and help her alien friend Adrien loot the universe.</p>
+				</div>
             </div>
-            <div className="nav-right" onClick={this.pressRight}>⥼</div>
+            	<div className="nav-right" onClick={this.pressRight}>
+					<img className="arrow" src={require('../img/right.png')} />
+				</div>
             </div>
             );
   }

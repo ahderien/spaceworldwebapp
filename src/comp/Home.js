@@ -17,8 +17,13 @@ class Home extends Component {
     render() {
         return (
              <div className="container">
-                <h1>Space World</h1>
-            <button onClick={this.stageChange}>Push to Start</button>
+				<div className="logoWrapper">
+                <img className="logo" src={require('../img/logo.png')} />
+				<button className="btn" onClick={this.stageChange}>Start My Adventure</button>
+                <img className="planet" src={require('../img/planet.png')} />
+				
+				</div>
+       			
             </div>
             );
   }

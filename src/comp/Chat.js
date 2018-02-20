@@ -29,6 +29,7 @@ class App extends Component {
             mode:1
         })
         this.socket = reactSocket("https://spaceworld-socket.herokuapp.com/");
+//        this.socket = reactSocket("http://localhost:5000/");
         this.socket.emit("adventurername",this.state.username);
         
         this.socket.on("userList", (data)=>{
@@ -87,8 +88,8 @@ class App extends Component {
           
           config = (
           <div>
-          <input type="text" placeholder="Enter your name" onChange={this.handleUsername}/>
-          <button onClick={this.joinChat}>Join Chat</button>
+          <input className="TextInput-input" type="text" placeholder="Enter your name" onChange={this.handleUsername}/>
+          <button className="btn" onClick={this.joinChat}>Join Chat</button>
           </div>
           )
       } else if (this.state.mode == 1){
@@ -99,6 +100,7 @@ class App extends Component {
               <input type="text" placeholder="Yell into the void" onChange={this.handleMyMsg}/>
               <button onClick={this.sendChat}>Send</button>
               </div>
+			  <div className="allUsers">Current Adventurers:</div>
               </div>
           )
       } 
@@ -106,7 +108,7 @@ class App extends Component {
       <div className="container">
         {config}
             <div className="l_users">
-            <div className="allUsers">Current Adventurers:</div>
+            
             {allAdventurers}
         </div>
       </div>

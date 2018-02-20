@@ -65,6 +65,8 @@
 
 /* --- END STARS CSS ---*/
 
+
+/* Profile page */
 .container {
     width: 500px;
     height: 500px;
@@ -76,50 +78,161 @@
     margin: auto;
     color: #fff;
     z-index: 999;
+	
 }
 
 .inner {
     width: 500px;
     height: 500px;
-    background-color: #000;
 }
 
+
+.columnLeft {
+    float: left;
+    width: 50%;
+    padding: 10px;
+	clear: right;
+	
+}
+
+h1 {
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: right;
+	font-weight: 300;
+	font-size: 50px;
+	
+}
+.hello{
+	text-align: left;
+	margin-left: -50px;
+}
+
+.name{
+	padding-top: 0.9em;
+	text-align: left;
+	margin-right: -100px;
+	font-weight: 600;
+}
+
+.intro{
+	line-height: 150%;
+	padding-top:3em;
+}
+
+/* Arrows page */
 .nav-left {
-    font-family: arial;
-    font-weight: bold;
-    font-size: 100px;
     text-align: center;
     position: fixed;
-    left: calc(50% - 350px);
-    top: calc(50% - 100px);
+    left: calc(45% - 350px);
+    top: calc(60% - 100px);
 }
 
 .nav-right {
-    font-family: arial;
-    font-weight: bold;
-    font-size: 100px;
+   
     text-align: center;
     position: fixed;
-    right: calc(50% - 350px);
-    top: calc(50% - 100px);
+    right: calc(45% - 350px);
+    top: calc(60% - 100px);
+}
+
+.arrow{
+	width: 60%;
 }
 
 .nav-left:hover, .nav-right:hover {
     color: #d6d6d6;
 }
 
-h1 {
-    font-family: times-new;
-    font-style: italic;
-    text-align: center;
-}
 
 /* img sizes */
 
 .size-adrien {
-    height: 250px;
+    height: 300px;
 }
 
 .size-cloris {
-    height: 250px;
+    height: 200px;
+	top:2em;
+}
+
+
+/* Home page Graphic */
+
+.logoWrapper{
+	position: absolute;
+	text-align: center;
+	margin-left: -80%;
+	
+}
+
+.logo {
+	position:relative;
+ 	width: 50vw;
+	margin-left:0%;
+	height: auto;
+	padding-bottom: 10em;
+	top:-3em;
+	z-index: -1;
+}
+
+.planet{
+	position: relative;
+	z-index: -1;
+}
+
+/* Home page Button */
+
+.btn {
+  font-size: 14px;
+  z-index: 999;
+  position: absolute;
+  top:20em;
+  right:43%;
+  border: 0 0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: transparent;
+  border-bottom: 1px solid;
+  color:white;
+  line-height: 1.4;
+  padding: 1em;
+  text-decoration: none;
+} 
+
+.btn:hover {
+  border: 1px solid;
+  box-shadow: 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+  background:transparent;
+  color:#6AD4FD;
+}
+
+/* Chat Page*/
+
+.TextInput-input{
+ position: absolute;
+  top:12em;
+  right:28%;
+  width: 50%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top:18px;
+  text-align: center;
+}
+
+.TextInput-input:focus{ 
+  border-bottom: 3px solid #6AD4FD;
+  color: #FFF;
 }

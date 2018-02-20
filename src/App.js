@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import clorisimg from './img/cloris.svg';
+import clorisimg from './img/cloris.png';
 import Home from "./comp/Home";
 import Adrien from "./comp/Adrien";
 import Cloris from "./comp/Cloris";
